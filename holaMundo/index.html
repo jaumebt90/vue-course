@@ -16,6 +16,19 @@
       <hr />
       <h2 v-if="estado">Cuenta Activa</h2>
       <h2 v-else>Cuenta Desactivada</h2>
+      <hr />
+      <h2 v-if="cantidad >500">Cantidad: {{cantidad}}</h2>
+      <h2 v-else-if="cantidad <=500 && cantidad >0">
+        cantidad:
+        <span style="color: red">{{cantidad}}</span>
+      </h2>
+      <h2 v-else>Sin cantidad {{cantidad}}</h2>
+
+      <hr />
+      <h2>Mis servicios disponibles:</h2>
+      <ul>
+        <li v-for="item in servicios">{{item}}</li>
+      </ul>
     </div>
     <script src="main.js"></script>
     <script>
