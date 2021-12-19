@@ -4,7 +4,7 @@ const app = Vue.createApp({
       titulo: "Mi banco con Vuejs",
       cantidad: 500,
       enlace: "https://youtube.com",
-      estado: true,
+      estado: false,
     };
   },
 });
