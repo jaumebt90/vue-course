@@ -12,6 +12,9 @@
       <h1>{{titulo}}</h1>
       <h2>Mi saldo es: {{cantidad }}</h2>
       <a v-bind:href="enlace">ir al enlace</a>
+
+      <hr />
+      <h2 v-if="estado">Cuenta Activa</h2>
     </div>
     <script src="main.js"></script>
     <script>
