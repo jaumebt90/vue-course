@@ -1,4 +1,4 @@
-const app = Vue.createApp({
+const epa = Vue.createApp({
   data() {
     return {
       titulo: "Hola mundo con Vuejs",
