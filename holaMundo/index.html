@@ -27,7 +27,9 @@
       <hr />
       <h2>Mis servicios disponibles:</h2>
       <ul>
-        <li v-for="item in servicios">{{item}}</li>
+        <li v-for="(item,index) in servicios" :key="index">
+          {{index+1}} - {{item}}
+        </li>
       </ul>
     </div>
     <script src="main.js"></script>
