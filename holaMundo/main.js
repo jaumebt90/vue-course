@@ -6,6 +6,7 @@ const app = Vue.createApp({
       enlace: "https://youtube.com",
       estado: false,
       servicios: ["transferencias", "pagos", "giros"],
+      desactivar: false,
     };
   },
   methods: {
@@ -13,6 +14,11 @@ const app = Vue.createApp({
       this.cantidad = this.cantidad + 100;
     },
     disminuirSaldo() {
+      if (this.cantidad === 0) {
+        alert("saldo cero!");
+        this.desactivar = true;
+        return;
+      }
       this.cantidad = this.cantidad - 100;
     },
   },

@@ -36,7 +36,9 @@
 
       <button @click="agregarSaldo">Agregar Saldo</button>
       <hr />
-      <button @click="disminuirSaldo">Disminuir Saldo</button>
+      <button @click="disminuirSaldo" :disabled="desactivar">
+        Disminuir Saldo
+      </button>
     </div>
     <script src="main.js"></script>
     <script>
