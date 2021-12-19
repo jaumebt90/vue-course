@@ -1,3 +1,7 @@
 const app = Vue.createApp({
-  data() {},
+  data() {
+    return {
+      titulo: "Hola mundo con Vuejs",
+    };
+  },
 });
