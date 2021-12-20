@@ -2,16 +2,19 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <Titulo texto="Mi banco dinamico 2.0" />
+    <Cuenta />
   </div>
 </template>
 
 <script>
 import Titulo from "./components/Titulo.vue";
+import Cuenta from "./components/Cuenta.vue";
 
 export default {
   name: "App",
   components: {
     Titulo,
+    Cuenta,
   },
 };
 </script>
