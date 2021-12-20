@@ -5,8 +5,8 @@
   <div v-for="(servicio, index) in servicios" :key="index">
     {{ index + 1 }} - {{ servicio }}
   </div>
-  <AccionSaldo texto="Aumentar" />
-  <AccionSaldo texto="Disminuir" />
+  <AccionSaldo texto="Aumentar" @accion="aumentar" />
+  <AccionSaldo texto="Disminuir" @accion="disminuir" />
 </template>
 
 <script>
