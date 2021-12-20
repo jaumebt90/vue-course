@@ -6,7 +6,7 @@
     {{ index + 1 }} - {{ servicio }}
   </div>
   <AccionSaldo texto="Aumentar" @accion="aumentar" />
-  <AccionSaldo texto="Disminuir" @accion="disminuir" />
+  <AccionSaldo texto="Disminuir" @accion="disminuir" :desactivar="desactivar" />
 </template>
 
 <script>
@@ -19,13 +19,20 @@ export default {
       cuenta: "Visa",
       estado: true,
       servicios: ["transfers", "bizum", "efectivo"],
+      desactivar: false,
     };
   },
   methods: {
     aumentar() {
       this.saldo = this.saldo + 100;
+      this.desactivar = false;
     },
     disminuir() {
+      if (this.saldo === 0) {
+        this.desactivar = true;
+        alert("Saldo agotado");
+        return;
+      }
       this.saldo = this.saldo - 100;
     },
   },

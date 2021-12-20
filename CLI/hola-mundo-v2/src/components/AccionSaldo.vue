@@ -1,11 +1,16 @@
 <template>
-  <button @click="this.$emit('accion')">{{ texto }}</button>
+  <button @click="accion">{{ texto }}</button>
 </template>
 
 <script>
 export default {
   props: {
     texto: String,
+  },
+  methods: {
+    accion() {
+      this.$emit("accion");
+    },
   },
 };
 </script>
