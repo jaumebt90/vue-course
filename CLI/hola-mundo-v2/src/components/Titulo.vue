@@ -1,4 +1,6 @@
-<template></template>
+<template>
+  <h1>Mi banco 2.0</h1>
+</template>
 
 <script>
 export default {};
