@@ -3,6 +3,7 @@
     <img alt="Vue logo" src="./assets/logo.png" />
     <Titulo texto="Mi banco dinamico 2.0" />
     <Cuenta />
+    <AccionSaldo />
   </div>
 </template>
 

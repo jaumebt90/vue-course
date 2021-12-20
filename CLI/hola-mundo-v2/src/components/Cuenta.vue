@@ -5,9 +5,13 @@
   <div v-for="(servicio, index) in servicios" :key="index">
     {{ index + 1 }} - {{ servicio }}
   </div>
+  <AccionSaldo texto="Aumentar" />
+  <AccionSaldo texto="Disminuir" />
 </template>
 
 <script>
+import AccionSaldo from "./AccionSaldo.vue";
+
 export default {
   data() {
     return {
@@ -16,6 +20,17 @@ export default {
       estado: true,
       servicios: ["transfers", "bizum", "efectivo"],
     };
+  },
+  methods: {
+    aumentar() {
+      this.saldo = this.saldo + 100;
+    },
+    disminuir() {
+      this.saldo = this.saldo - 100;
+    },
+  },
+  components: {
+    AccionSaldo,
   },
 };
 </script>
