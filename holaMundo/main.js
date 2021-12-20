@@ -26,5 +26,8 @@ const app = Vue.createApp({
     colorCantidad() {
       return this.cantidad > 500 ? "text-success" : "text-danger";
     },
+    mayusculasTexto() {
+      return this.titulo.toUpperCase();
+    },
   },
 });
