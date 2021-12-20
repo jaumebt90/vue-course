@@ -45,7 +45,7 @@
       <button @click="disminuirSaldo(100)" :disabled="desactivar">
         Disminuir Saldo
       </button>
-      <footer-banco cantidad="700" fecha="diciembre 2021" />
+      <footer-banco :valor="cantidad" />
     </div>
     <script src="main.js"></script>
     <script src="components/Footer.js"></script>
