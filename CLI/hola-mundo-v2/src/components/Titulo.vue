@@ -1,9 +1,18 @@
 <template>
-  <h1>Mi banco 2.0</h1>
+  <h1>{{ texto }}</h1>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "Titulo",
+  props: {
+    texto: String,
+  },
+};
 </script>
 
-<style></style>
+<style>
+h1 {
+  color: peru;
+}
+</style>
