@@ -5,7 +5,7 @@ const app = Vue.createApp({
       cantidad: 1000,
       enlace: "https://youtube.com",
       estado: false,
-      servicios: ["transferencias", "pagos", "giros"],
+      servicios: ["transferencias", "pagos", "giros", "bizum"],
       desactivar: false,
     };
   },
