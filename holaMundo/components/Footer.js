@@ -1,4 +1,5 @@
 app.component("footer-banco", {
+  props: ["cantidad"],
   template: /*html*/ `
   <div class="bg-dark py-3 mt-2 text-white">
         <h3>{{texto}} - {{cantidad}}</h3>
@@ -7,7 +8,6 @@ app.component("footer-banco", {
   data() {
     return {
       texto: "Footer del sitio web dinamico",
-      cantidad: 1000,
     };
   },
 });
