@@ -16,9 +16,7 @@
   <body>
     <div id="app">
       <h1>{{titulo}}</h1>
-      <h2 class="bg-dark" :class="[cantidad>500?'text-success':'text-danger']">
-        Mi saldo es: {{cantidad }}
-      </h2>
+      <h2 class="bg-dark" :class="colorCantidad">Mi saldo es: {{cantidad }}</h2>
       <a v-bind:href="enlace">ir al enlace</a>
 
       <hr />
