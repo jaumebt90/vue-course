@@ -45,12 +45,10 @@
       <button @click="disminuirSaldo(100)" :disabled="desactivar">
         Disminuir Saldo
       </button>
-
-      <div class="bg-dark py-3 mt-2 text-white">
-        <h3>Footer de mi sitio web</h3>
-      </div>
+      <footer-banco />
     </div>
     <script src="main.js"></script>
+    <script src="components/Footer.js"></script>
     <script>
       const mountedApp = app.mount("#app"); //agafam app de const de main i vinculam a id app, mountedApp sempre despres de src
     </script>
